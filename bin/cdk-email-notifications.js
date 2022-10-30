@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-const cdk = require('aws-cdk-lib');
-const { CdkEmailNotificationsStack } = require('../lib/cdk-email-notifications-stack');
+import {App} from 'aws-cdk-lib';
 
-const app = new cdk.App();
+import { CdkEmailNotificationsStack } from '../lib/cdk-email-notifications-stack.js'
+
+const app = new App();
 new CdkEmailNotificationsStack(app, 'CdkEmailNotificationsStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
