@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-
 import {App} from 'aws-cdk-lib';
+import { CdkEmailNotificationsStack } from '../lib/cdk-email-notifications-stack.js';
 
-import { CdkEmailNotificationsStack } from '../lib/cdk-email-notifications-stack.js'
+
 
 const app = new App();
 new CdkEmailNotificationsStack(app, 'CdkEmailNotificationsStack', {
